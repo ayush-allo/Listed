@@ -8,6 +8,7 @@
 .SideBar {
   width: 280px;
   height: calc(100vh - 80px);
+  min-height: 575px;
   background: #000000;
   border-radius: 30px;
   display: flex;
