@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 385px;
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 5px;
+}
+.title_desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 1px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 25px 0;
+}
+.google,
+.apple {
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 8px 19px 7px 19px;
+  cursor: pointer;
+}
+.google span,
+.apple span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #858585;
+  margin-left: 10px;
+}
+.form {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+.inputCont {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.inputCont label {
+  margin-bottom: 10px;
+}
+.inputCont input {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.forgot {
+  padding: 10px 0;
+  color: #346bd5;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.submit {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.submit button {
+  background: #000000;
+  border-radius: 10px;
+  width: 100%;
+  padding: 9px 0;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.changePage {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #858585;
+}
+.changePage a {
+  color: #346bd4;
+}
+@media screen and (max-width: 400px) {
+  .container {
+    height: 100%;
+  }
+  .google,
+  .apple {
+    padding: 12px 5px 12px 5px;
+  }
+}

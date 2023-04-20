@@ -1,0 +1,79 @@
+.SideBarCont {
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.SideBar {
+  width: 280px;
+  height: calc(100vh - 80px);
+  background: #000000;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  position: fixed;
+}
+
+.title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Montserrat";
+  margin: 60px 0;
+}
+.navlinks li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  list-style: none;
+  display: flex;
+  margin-bottom: 40px;
+}
+.navlinks li a {
+  display: flex;
+  align-items: flex-end;
+}
+.navlinks li span {
+  margin-right: 20px;
+  line-height: 17px;
+}
+.help li {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 20px;
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
+@media screen and (max-width: 1280px) {
+  .SideBarCont {
+    width: 270px;
+  }
+  .SideBar {
+    width: 245px;
+    height: calc(100vh - 50px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .SideBarCont {
+    position: fixed;
+    transform: translateX(-280px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .show {
+    position: fixed;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+}

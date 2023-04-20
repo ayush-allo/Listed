@@ -1,0 +1,131 @@
+.firstCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchCont {
+  display: flex;
+  align-items: center;
+}
+.search {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 30px;
+  display: flex;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.search button {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notification {
+  margin: 0 30px;
+}
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 30px;
+  height: 30px;
+}
+.contentTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 20px 0;
+}
+.details {
+  position: absolute;
+  top: 80px;
+  right: 2%;
+  background-color: #eaf1fb;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.details button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #6972c4;
+}
+.detailsCont {
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.detailsCont img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.name,
+.email {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-left: 10px;
+  padding: 3px 0;
+}
+.email {
+  font-weight: 300;
+  font-size: 12px;
+}
+.menu {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  .firstCont {
+    flex-wrap: wrap;
+  }
+  .details {
+    top: 115px;
+  }
+  .search {
+    width: 230px;
+  }
+  .menu {
+    display: block;
+  }
+  .menu img {
+    width: 30px;
+  }
+  .contentTitle {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+}

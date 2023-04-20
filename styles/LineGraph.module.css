@@ -1,0 +1,76 @@
+.container {
+  padding: 30px 39px 25px 40px;
+}
+.Title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.select {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #858585;
+  margin: 5px -5px;
+  border: 2px solid #ffffff;
+}
+.select:hover {
+  cursor: pointer;
+}
+.select:focus {
+  outline: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.legend {
+  display: flex;
+  margin: 0 0 0 20px;
+}
+.legend_item {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+.legend_color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 11px;
+  background: #e9a0a0;
+}
+.legend_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.legend_item:nth-child(2) .legend_color {
+  background: #9bdd7c;
+}
+
+@media screen and (max-width: 400px) {
+  .legend {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .legend_item {
+    margin: 0 0 10px 0;
+  }
+  .container {
+    padding: 20px;
+  }
+  .container canvas {
+    height: 300px;
+  }
+}

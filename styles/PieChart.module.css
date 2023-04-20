@@ -1,0 +1,91 @@
+.container {
+  padding: 30px 39px 35px 40px;
+}
+.selectBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 26px 0;
+}
+.Title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.select {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #858585;
+  border: 2px solid #ffffff;
+}
+.select:hover {
+  cursor: pointer;
+}
+.select:focus {
+  outline: none;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart {
+  margin-left: 12px;
+  width: 36%;
+}
+.legend {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.legend_item {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+  margin-bottom: 21px;
+}
+.legend_color {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 11px;
+  margin-bottom: 12px;
+  background: #98d89e;
+}
+.legend_item:nth-child(2) .legend_color {
+  background: #f6dc7d;
+}
+.legend_item:nth-child(3) .legend_color {
+  background: #ee8484;
+}
+.legend_item:nth-child(3){
+    margin-bottom: 0;
+}
+.legend_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.legend_percent {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #858585;
+}
+@media screen and (max-width: 400px){
+  .container{
+    padding: 30px 20px 35px 20px;
+  }
+}

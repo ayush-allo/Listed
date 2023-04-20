@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side_bar {
+  width: 40vw;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side_bar span {
+  color: #ffffff;
+  font-size: 72px;
+  line-height: 88px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 60vw;
+  height: 100vh;
+  background: #f5f5f5;
+}
+@media screen and (max-width: 400px) {
+  .main {
+    flex-direction: column;
+  }
+  .side_bar {
+    width: 100vw;
+    height: 10vh;
+  }
+  .container {
+    width: 100vw;
+    height: 90vh;
+    padding: 0 20px;
+  }
+  .side_bar span {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
