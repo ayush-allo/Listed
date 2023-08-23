@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Head from 'next/head'
 import Styles from '@/styles/DashBoard.module.css'
 import SideBar from '@/components/SideBar'
 import LineGraph from '@/components/LineGraph'
